@@ -5,8 +5,8 @@ def test(function_name):
     pag.write(function_name, interval=0.01)
     #pag.press('enter')
 
-    box = pag.locateOnScreen("screenshots/"+function_name+".png")
-    #box = pag.locateOnScreen("screenshots/e^x.png")
+    #box = pag.locateOnScreen("screenshots/"+function_name+".png")
+    box = pag.locateOnScreen("screenshots/e^x.png")
     #pag.screenshot("screenshots/"+function_name+".png", region=(510, 220, 770, 530))
        
     if (box == None):
