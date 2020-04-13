@@ -1,8 +1,8 @@
 import pyautogui as pag
 
 def test(function_name):
-    pag.PAUSE=0.5
-    pag.write(function_name, interval=0.01)
+    pag.PAUSE=1
+    pag.write(function_name, interval=0.1)
     #pag.press('enter')
 
     #box = pag.locateOnScreen("screenshots/"+function_name+".png")
@@ -13,9 +13,9 @@ def test(function_name):
         print(function_name + ": No match")
     else:
         print(function_name + ": Image match")
-    pag.PAUSE=0.01
+    pag.PAUSE=0.05
 
-pag.PAUSE=0.01
+pag.PAUSE=0.05
 
 FUNCTION_BOX = (185, 270)
 
